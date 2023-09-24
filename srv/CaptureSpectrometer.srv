@@ -1,0 +1,6 @@
+# Request
+int32 integration_time
+---
+# Response - T/F
+float64[] wavelengths
+float64[] intensities

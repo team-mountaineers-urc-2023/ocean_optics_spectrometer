@@ -1,0 +1,10 @@
+<launch>
+	<arg name="spectrometer_service" default="/spectrometer"/>
+	<arg name="device_sn" default="S14413"/>
+
+	<node pkg="ocean_optics_spectrometer" name="spectrometer"
+	type="spectrometer.py" output="screen" respawn="false">
+		<param name="spectrometer_service" value="$(arg spectrometer_service)"/>
+		<param name="device_sn" value="$(arg device_sn)"/>
+	</node>
+</launch>
